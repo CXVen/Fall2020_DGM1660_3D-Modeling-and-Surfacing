@@ -1,6 +1,6 @@
 //Maya ASCII 2019 scene
-//Name: Rocket_Model.ma
-//Last modified: Tue, Sep 01, 2020 11:46:43 PM
+//Name: Version 1 Rocket_Model with boosters.ma
+//Last modified: Tue, Sep 01, 2020 11:48:35 PM
 //Codeset: 1252
 requires maya "2019";
 requires "mtoa" "3.1.2";
@@ -600,4 +600,4 @@ connectAttr "polyTorus1.out" "deleteComponent1.ig";
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
 connectAttr "pCubeShape1.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "pTorusShape1.iog" ":initialShadingGroup.dsm" -na;
-// End of Rocket_Model.ma
+// End of Version 1 Rocket_Model with boosters.ma
