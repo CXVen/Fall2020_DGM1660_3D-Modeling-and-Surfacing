@@ -1,6 +1,6 @@
 //Maya ASCII 2019 scene
 //Name: Mavic Drone Prototype.ma
-//Last modified: Thu, Sep 17, 2020 08:08:57 PM
+//Last modified: Thu, Sep 17, 2020 10:44:55 PM
 //Codeset: 1252
 requires maya "2019";
 requires "mtoa" "3.1.2";
@@ -13,8 +13,8 @@ fileInfo "osv" "Microsoft Windows 10 Technical Preview  (Build 18363)\n";
 createNode transform -s -n "persp";
 	rename -uid "128D4A4C-4F68-2383-A55B-DFAB55DD961F";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 18.371340015706956 17.22925753770425 22.07465845796554 ;
-	setAttr ".r" -type "double3" -30.938352729063336 40.99999999998397 2.1071381394972622e-15 ;
+	setAttr ".t" -type "double3" 10.877570554653545 39.131864304966903 -3.6454851295413744 ;
+	setAttr ".r" -type "double3" -86.738352729055933 22.999999999978943 -1.7276142920561747e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "00335D0A-45A4-7975-0413-CC9147BAC1CA";
 	setAttr -k off ".v" no;
@@ -22,7 +22,7 @@ createNode camera -s -n "perspShape" -p "persp";
 	setAttr ".ncp" 0.03937007874015748;
 	setAttr ".fcp" 3937.0078740157478;
 	setAttr ".fd" 1.9685039370078738;
-	setAttr ".coi" 21.938294994659582;
+	setAttr ".coi" 31.056494874921391;
 	setAttr ".ow" 3.9370078740157477;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
@@ -42,7 +42,7 @@ createNode camera -s -n "topShape" -p "top";
 	setAttr ".fcp" 3937.0078740157478;
 	setAttr ".fd" 1.9685039370078738;
 	setAttr ".coi" 393.74015748031496;
-	setAttr ".ow" 9.4522639589937452;
+	setAttr ".ow" 14.337416754686794;
 	setAttr ".imn" -type "string" "top";
 	setAttr ".den" -type "string" "top_depth";
 	setAttr ".man" -type "string" "top_mask";
@@ -245,7 +245,7 @@ createNode mesh -n "pCubeShape2" -p "pCube2";
 	setAttr ".ai_translator" -type "string" "polymesh";
 createNode transform -n "pCylinder1";
 	rename -uid "CF647027-467E-60E7-89D5-858BA82BA360";
-	setAttr ".t" -type "double3" 7.725440721832519 3.1152727982816808 8.5230041089852193 ;
+	setAttr ".t" -type "double3" 7.6527673566748025 3.1152727982816808 8.5541498369099553 ;
 	setAttr ".s" -type "double3" 0.69774645891288811 0.65127298587862492 0.69774645891288811 ;
 createNode mesh -n "pCylinderShape1" -p "pCylinder1";
 	rename -uid "CD1CAA0E-40A6-A96E-079D-90ADF2659B7C";
@@ -260,7 +260,7 @@ createNode mesh -n "pCylinderShape1" -p "pCylinder1";
 	setAttr ".ai_translator" -type "string" "polymesh";
 createNode transform -n "pCylinder2";
 	rename -uid "3D7A80AF-4A20-341B-6EFD-E6911CBDB162";
-	setAttr ".t" -type "double3" 9.4075575338588031 1.4502606419991597 -4.9199598682323185 ;
+	setAttr ".t" -type "double3" 9.4447282240963055 1.4502606419991597 -4.9535412198721449 ;
 	setAttr ".s" -type "double3" 0.79970241464434522 0.68052309349892404 0.79970241464434522 ;
 createNode mesh -n "pCylinderShape2" -p "pCylinder2";
 	rename -uid "13908A15-43E0-E247-82EE-9D9ECA3F720F";
