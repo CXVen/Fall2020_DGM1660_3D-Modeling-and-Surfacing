@@ -1,6 +1,6 @@
 //Maya ASCII 2019 scene
 //Name: Mavic Drone Prop Twist.ma
-//Last modified: Sat, Sep 26, 2020 02:28:38 AM
+//Last modified: Sat, Sep 26, 2020 02:55:02 AM
 //Codeset: 1252
 requires maya "2019";
 requires "mtoa" "3.1.2";
@@ -13,8 +13,8 @@ fileInfo "osv" "Microsoft Windows 10 Technical Preview  (Build 18363)\n";
 createNode transform -s -n "persp";
 	rename -uid "128D4A4C-4F68-2383-A55B-DFAB55DD961F";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 17.441332909086405 18.553734389085864 23.22133294849948 ;
-	setAttr ".r" -type "double3" -30.938352797514565 10108.599999997248 -1.8112849396822555e-15 ;
+	setAttr ".t" -type "double3" 24.000804850848063 24.244214711427034 31.77565787658159 ;
+	setAttr ".r" -type "double3" -27.338352794154321 10476.599999998967 1.9808703595196592e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "00335D0A-45A4-7975-0413-CC9147BAC1CA";
 	setAttr -k off ".v" no;
@@ -22,7 +22,7 @@ createNode camera -s -n "perspShape" -p "persp";
 	setAttr ".ncp" 0.03937007874015748;
 	setAttr ".fcp" 3937.0078740157478;
 	setAttr ".fd" 1.9685039370078738;
-	setAttr ".coi" 29.147792974571196;
+	setAttr ".coi" 46.040528105400526;
 	setAttr ".ow" 3.9370078740157477;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
@@ -6817,17 +6817,25 @@ createNode mesh -n "polySurfaceShape27" -p "polySurface27";
 	setAttr -s 2 ".iog[0].og";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.40066534280776978 0.32874220609664917 ;
+	setAttr ".pv" -type "double2" 0.5 0.92971175909042358 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr ".cuvs" -type "string" "map1";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
-	setAttr -s 6 ".pt";
+	setAttr -s 14 ".pt";
 	setAttr ".pt[12]" -type "float3" 0 -1.1733198e-08 0 ;
 	setAttr ".pt[15]" -type "float3" 0 -1.1733198e-08 0 ;
 	setAttr ".pt[45]" -type "float3" 0 0 2.3466395e-08 ;
 	setAttr ".pt[53]" -type "float3" 0 0 2.3466395e-08 ;
+	setAttr ".pt[62]" -type "float3" -0.058157057 0 0 ;
+	setAttr ".pt[63]" -type "float3" 1.1733198e-08 0 0 ;
+	setAttr ".pt[64]" -type "float3" -0.15361685 0 0 ;
+	setAttr ".pt[65]" -type "float3" -0.080985397 0 0 ;
+	setAttr ".pt[66]" -type "float3" 0.058157057 0 0 ;
+	setAttr ".pt[67]" -type "float3" 0.15361683 0 0 ;
+	setAttr ".pt[68]" -type "float3" -1.1733198e-08 0 0 ;
+	setAttr ".pt[69]" -type "float3" 0.080985397 0 0 ;
 	setAttr ".pt[108]" -type "float3" 0 0.22282708 0 ;
 	setAttr ".pt[109]" -type "float3" 0 0.22282708 0 ;
 	setAttr ".ai_translator" -type "string" "polymesh";
