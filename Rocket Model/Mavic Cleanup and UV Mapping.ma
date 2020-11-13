@@ -1,6 +1,6 @@
 //Maya ASCII 2019 scene
 //Name: Mavic Cleanup and UV Mapping.ma
-//Last modified: Fri, Nov 13, 2020 02:34:21 AM
+//Last modified: Fri, Nov 13, 2020 02:38:53 AM
 //Codeset: 1252
 requires maya "2019";
 requires "mtoa" "3.1.2";
@@ -15,8 +15,8 @@ fileInfo "osv" "Microsoft Windows 10 Technical Preview  (Build 18363)\n";
 createNode transform -s -n "persp";
 	rename -uid "128D4A4C-4F68-2383-A55B-DFAB55DD961F";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 26.549899377798845 18.395714849625215 28.922207723044274 ;
-	setAttr ".r" -type "double3" 8979.8616489421347 762.59999999933268 0 ;
+	setAttr ".t" -type "double3" -9.8373939852514916 5.9799181895396254 38.550705414058143 ;
+	setAttr ".r" -type "double3" 9359.0616489421845 340.99999999930247 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "00335D0A-45A4-7975-0413-CC9147BAC1CA";
 	setAttr -k off ".v" no;
@@ -24,7 +24,7 @@ createNode camera -s -n "perspShape" -p "persp";
 	setAttr ".ncp" 0.03937007874015748;
 	setAttr ".fcp" 3937.0078740157478;
 	setAttr ".fd" 1.9685039370078738;
-	setAttr ".coi" 37.863241010980836;
+	setAttr ".coi" 37.863241010978022;
 	setAttr ".ow" 3.9370078740157477;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
