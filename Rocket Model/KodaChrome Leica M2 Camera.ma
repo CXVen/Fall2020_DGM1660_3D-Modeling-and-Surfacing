@@ -1,6 +1,6 @@
 //Maya ASCII 2019 scene
 //Name: KodaChrome Leica M2 Camera.ma
-//Last modified: Thu, Nov 19, 2020 05:35:27 PM
+//Last modified: Wed, Nov 25, 2020 09:29:21 PM
 //Codeset: 1252
 requires maya "2019";
 requires "mtoa" "3.1.2";
@@ -13,7 +13,7 @@ fileInfo "osv" "Microsoft Windows 10 Technical Preview  (Build 18363)\n";
 createNode transform -s -n "persp";
 	rename -uid "70A9156F-4AC5-A723-E48C-12BF730BFACE";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 15.000503159626774 16.427247963436603 20.026741201407408 ;
+	setAttr ".t" -type "double3" 10.097396655456707 12.093874963198445 13.228416371717776 ;
 	setAttr ".r" -type "double3" -27.338352729604935 35.800000000003266 -1.9607302206051811e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "465940BF-4906-3A54-E6F5-13910B5FA3B0";
@@ -22,7 +22,7 @@ createNode camera -s -n "perspShape" -p "persp";
 	setAttr ".ncp" 0.03937007874015748;
 	setAttr ".fcp" 3937.0078740157478;
 	setAttr ".fd" 1.9685039370078738;
-	setAttr ".coi" 29.805370931453218;
+	setAttr ".coi" 20.36949283556822;
 	setAttr ".ow" 3.9370078740157477;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
@@ -173,6 +173,7 @@ createNode imagePlane -n "imagePlaneShape3" -p "imagePlane3";
 	setAttr ".cs" -type "string" "sRGB";
 createNode transform -n "pCube1";
 	rename -uid "5922A241-4C77-883B-2EBC-1E88A508DAA5";
+	setAttr ".s" -type "double3" 5.3845353486322969 3.0601723803582446 1.2954721792162636 ;
 createNode mesh -n "pCubeShape1" -p "pCube1";
 	rename -uid "67D06137-4BA5-32E4-41AA-D9882A00C4D1";
 	setAttr -k off ".v";
