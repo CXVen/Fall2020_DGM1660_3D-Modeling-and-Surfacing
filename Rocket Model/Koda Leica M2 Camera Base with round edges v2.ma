@@ -1,6 +1,6 @@
 //Maya ASCII 2019 scene
 //Name: Koda Leica M2 Camera Base with round edges v2.ma
-//Last modified: Tue, Dec 01, 2020 10:06:10 PM
+//Last modified: Tue, Dec 01, 2020 10:49:41 PM
 //Codeset: 1252
 requires maya "2019";
 requires "mtoa" "3.1.2";
@@ -13,8 +13,8 @@ fileInfo "osv" "Microsoft Windows 10 Technical Preview  (Build 18363)\n";
 createNode transform -s -n "persp";
 	rename -uid "70A9156F-4AC5-A723-E48C-12BF730BFACE";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -5.6566173733142673 4.4599865821347731 24.973593446078969 ;
-	setAttr ".r" -type "double3" -5.1383528473892222 -14774.999999990237 -2.0579703137879163e-16 ;
+	setAttr ".t" -type "double3" -7.8501300653737092 23.39271252827325 23.056493961114867 ;
+	setAttr ".r" -type "double3" -41.138352845686931 -16947.000000018641 0 ;
 	setAttr ".rp" -type "double3" -1.7483827159451278e-16 -6.9935308637805111e-16 1.7483827159451278e-16 ;
 	setAttr ".rpt" -type "double3" -1.8834145809518389e-18 -2.0877788424405307e-17 -1.9122468277597564e-16 ;
 createNode camera -s -n "perspShape" -p "persp";
@@ -24,7 +24,7 @@ createNode camera -s -n "perspShape" -p "persp";
 	setAttr ".ncp" 0.03937007874015748;
 	setAttr ".fcp" 3937.0078740157478;
 	setAttr ".fd" 1.9685039370078738;
-	setAttr ".coi" 22.286431332658772;
+	setAttr ".coi" 29.934137299735443;
 	setAttr ".ow" 3.9370078740157477;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
@@ -4062,6 +4062,8 @@ createNode transform -n "pCylinder18";
 	setAttr ".sp" -type "double3" -9.8733203617606566 0 -9.3865582323449795e-08 ;
 createNode transform -n "polySurface1" -p "pCylinder18";
 	rename -uid "AFB5D64A-463A-337B-C16A-50A99AAAFFCB";
+	setAttr ".rp" -type "double3" -9.8733203617606566 -0.20505260294816624 -1.4079837348517469e-07 ;
+	setAttr ".sp" -type "double3" -9.8733203617606566 -0.20505260294816624 -1.4079837348517469e-07 ;
 createNode mesh -n "polySurfaceShape7" -p "polySurface1";
 	rename -uid "455EF1E2-4538-3519-FB75-5D969D14DF34";
 	setAttr -k off ".v";
